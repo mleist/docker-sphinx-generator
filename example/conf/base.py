@@ -12,6 +12,7 @@ copyright = f"{date.today().year}"
 
 extensions = ['myst_parser',
               "sphinx_design",
+              'nbsphinx',
               'sphinxcontrib.email',
               ]
 

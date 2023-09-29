@@ -1,11 +1,11 @@
 FROM sphinxdoc/sphinx-latexpdf
 
-#RUN apt-get update \
-# && apt-get install --no-install-recommends --yes \
-#      gcc \
-# && apt-get autoremove \
-# && apt-get clean \
-# && rm -rf /var/lib/apt/lists/*
+RUN apt-get update \
+ && apt-get install --no-install-recommends --yes \
+      pandoc \
+ && apt-get autoremove \
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/*
 
 COPY ./fonts_free/* /usr/share/fonts/
 COPY ./fonts_private/* /usr/share/fonts/
