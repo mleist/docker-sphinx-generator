@@ -170,3 +170,8 @@ latex_show_urls = 'no'
 latex_additional_files = [
     'static_free/background3.pdf',
 ]
+
+
+# -- Options for PlantUML -------------------------------------------------
+
+plantuml = '/usr/bin/plantuml -config /docs/conf/acme_plantuml.cfg '

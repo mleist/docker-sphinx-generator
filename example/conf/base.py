@@ -14,6 +14,7 @@ extensions = ['myst_parser',
               "sphinx_design",
               'nbsphinx',
               'sphinxcontrib.email',
+              'sphinxcontrib.plantuml',
               ]
 
 
@@ -44,3 +45,9 @@ html_theme = 'alabaster'
 html_static_path = ['static_free']
 latex_engine = 'xelatex'
 myst_words_per_minute = 30
+
+# -- Options for PlantUML -------------------------------------------------
+
+plantuml_output_format= 'png'
+plantuml_latex_output_format = 'eps'
+plantuml_batch_size = 100

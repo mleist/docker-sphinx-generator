@@ -14,3 +14,4 @@ Welcome to docker-sphinx-generator documentation!
    lorem_02.md
    lorem_03.md
    example01.ipynb
+   example_uml.rst
