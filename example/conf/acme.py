@@ -87,7 +87,7 @@ latex_elements = {
            BoldItalicFont = Montserrat-BoldItalic.ttf
         ]
         \setmonofont{FiraCode-Regular.ttf}
-        \setmainlanguage{german}
+
         \setcounter{page}{0}
         \makeatletter
         \fancypagestyle{normal}{
@@ -144,7 +144,8 @@ latex_elements = {
             \vskip 5\p@
             \CTV\FmTi{#1}\par\nobreak
             \mghrulefill{\RW}\par\nobreak
-            \vskip 40\p@}''',
+            \vskip 40\p@}
+            ''',
     'fncychap': r'\usepackage[Sonny]{fncychap}',
     'printindex': r'\footnotesize\raggedright\printindex',
     'extrapackages': r'''

@@ -8,7 +8,6 @@ Welcome to docker-sphinx-generator documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Übersicht
 
    lorem_01.md
    lorem_02.md

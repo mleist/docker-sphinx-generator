@@ -5,8 +5,9 @@ image/fonts_private/*.*
 example/_build
 example/.DS_Store
 example/_exports
-example/conf/private/*.py
+example/conf/private/*
 example/conf/__pycache__
 example/__pycache__
 example/conf/private/__pycache__
 example/static_private/*
+/example/md_generated

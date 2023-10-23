@@ -46,6 +46,37 @@ html_static_path = ['static_free']
 latex_engine = 'xelatex'
 myst_words_per_minute = 30
 
+
+# -- Options for PDF output -------------------------------------------------
+
+latex_listoffigures_in_preamble =  r'''
+        \renewcommand{\sphinxtableofcontents}{%
+          \pagenumbering{roman}%
+          \begingroup
+            \parskip \z@skip
+            \sphinxtableofcontentshook
+            \tableofcontents
+            \pagebreak%
+            \vspace{0pt}
+            \listoffigures
+            \vfill
+          \endgroup
+          % before resetting page counter, let's do the right thing.
+          \if@openright\cleardoublepage\else\clearpage\fi
+          \pagenumbering{arabic}%
+        }
+'''
+
+
+def set_latex_language(language, latex_elements):
+    if language == 'en':
+        latex_elements['preamble'] += "\n\\setmainlanguage{english}\n"
+    elif language == 'de':
+        latex_elements['preamble'] += "\n\\setmainlanguage{ngerman}\n"
+    else:
+        latex_elements['preamble'] += "\n\\setmainlanguage{english}\n"
+
+
 # -- Options for PlantUML -------------------------------------------------
 
 plantuml_output_format= 'png'

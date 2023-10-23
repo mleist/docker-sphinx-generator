@@ -11,9 +11,14 @@ from conf.acme import *
 # from conf.private.amp import *
 # from conf.private.ks import *
 
+# include listoffigures
+latex_elements['preamble'] += latex_listoffigures_in_preamble
+
 # -- Project information -----------------------------------------------------
 
 project = 'Project Name'
 author = 'author@never.ever'
-release = '0.01'
-language = 'de'
+release = '3.14'
+language = 'en'
+
+set_latex_language(language, latex_elements)
