@@ -9,7 +9,9 @@ RUN apt-get update \
 
 COPY ./fonts_free/* /usr/share/fonts/
 COPY ./fonts_private/* /usr/share/fonts/
-COPY plantuml-1.2023.11.jar /usr/share/plantuml/plantuml.jar
+# COPY plantuml-1.2023.11.jar /usr/share/plantuml/plantuml.jar
+COPY plantuml-1.2024.3.jar /usr/share/plantuml/plantuml.jar
+
 
 WORKDIR /docs
 ADD requirements.txt /docs

@@ -7,8 +7,7 @@ import os
 import sys
 sys.path.append(os.path.abspath('.'))
 
-from conf.acme import *
-# from conf.private.amp import *
+# from conf.acme import *
 # from conf.private.ks import *
 
 # include listoffigures

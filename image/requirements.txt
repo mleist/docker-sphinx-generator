@@ -3,3 +3,5 @@ sphinxcontrib-email
 nbsphinx
 myst-parser
 sphinxcontrib-plantuml
+strictdoc
+reqif
