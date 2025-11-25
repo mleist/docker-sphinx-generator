@@ -2,6 +2,8 @@ sphinx_design
 sphinxcontrib-email
 nbsphinx
 myst-parser
+linkify-it-py
 sphinxcontrib-plantuml
+sphinxcontrib-eval
 strictdoc
 reqif
